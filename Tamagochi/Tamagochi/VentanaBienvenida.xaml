@@ -1,0 +1,22 @@
+﻿<Window x:Name="VentanaBienvenida1" x:Class="Tamagochi.VentanaBienvenida"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tamagochi"
+        mc:Ignorable="d"
+        Title="Window1" Height="438.965" Width="423.569" MaxWidth="423.569" MaxHeight="438.965">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="47*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="lblFondoInicio" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="416" Source="AD-Digivice.png" Margin="0,0,0,-11" Grid.RowSpan="2"/>
+
+        <Label x:Name="lblTitulo" Content="IPO 2 - Digimon Tamagochi" HorizontalAlignment="Left" Margin="29,47.035,0,0" VerticalAlignment="Top" FontSize="28" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" Grid.Row="1"/>
+        <TextBox x:Name="tbNombreDigimon" HorizontalAlignment="Left" Height="38" Margin="181,224.035,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="20" Grid.Row="1"/>
+        <Label x:Name="lblNombreDigimon" Content="Nombre digimon:" HorizontalAlignment="Left" Margin="10,225.035,0,0" VerticalAlignment="Top" FontSize="20" Grid.Row="1"/>
+        <Button x:Name="btnAceptar" Content="Comenzar" HorizontalAlignment="Left" Margin="152,294.035,0,0" VerticalAlignment="Top" Width="120" Height="37" Click="enviarNombre" Grid.Row="1"/>
+
+    </Grid>
+</Window>
